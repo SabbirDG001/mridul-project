@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.hoverviolet:hover svg {
+  color: rgb(91 33 182);
+}
+.hoverdiv:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(247, 52, 88, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.hovertext {
+  transition: all 0.6s ease-in;
+}
+.hoverimage {
+  transition: all 0.8s ease-in;
+}
+.hoverdiv:hover .hovertext {
+  bottom: 5rem;
+  transition: all 0.6s ease-in;
+}
+.hoverdiv:hover .hoverimage {
+  transform: scale(1);
+  bottom: 20px;
+  transition: all 0.8s ease-in;
+}
+.hovergradient {
+  height: 35rem;
+  width: 100%;
+  position: relative;
+}
+.hovergradient:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  transition: height 1s ease-out;
+  background: linear-gradient(to bottom, transparent 0%, rgba(247, 52, 88, 1) 100%);
+}
+.hovergradient:hover:before {
+  height: 100%;
+}
+.underbar::after{
+  content: '';
+  width: 4%;
+  height: 2px;
+  background-color: #f72f54;
+  position: absolute;
+  bottom: -2px;
+  left: 44.2%;
+  transition: width 0.3s ease-in;
+}
+.underbar:hover::after{
+  width: 11%;
+  transition: width 0.3s ease-in;
+}
